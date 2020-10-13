@@ -15,24 +15,30 @@ public class ScoreDeal {
 	
 	public String Max() {
 	//求最大值
-			for(int i=0;i<slist.size();i++) {
-				if(slist.get(i).compareTo(max) >0)//string类型比较，若第一个大,返回大于0的值
-				{
-					max=slist.get(i);
-				}
+		for (String i : slist) {
+			if(i.compareTo(max) >0)//string类型比较，若第一个大,返回大于0的值
+			{
+				max=i;
 			}
+		}
 			return max;
 	}
+	
+	
+	
 		public String Mix() {	
 			//最小值
-			for(int i=0;i<slist.size();i++) {
+			
+			for (String i : slist) {
 				mix=slist.get(0);
-				if(slist.get(i).compareTo(mix) <0)//string类型比较，若第一个大,返回大于0的值
+				if(i.compareTo(mix) <0)//string类型比较，若第一个大,返回大于0的值
 				{
-					mix=slist.get(i);
+					mix=i;
 				}
 			}
 			return mix;
+			
+			
 		}
 		
 		public double Mid() {
